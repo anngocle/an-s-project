@@ -62,6 +62,20 @@ foreach ($list as $k => $v) {
  foreach ($name as $value){
      echo "$value <br>";
  }
+ // Create the array:
+ $movies = array (
+'Casablanca' => 10,
+ 'To Kill a Mockingbird' => 10,
+ 'The English Patient' => 2,
+ 'Stranger Than Fiction' => 9,
+ 'Story of the Weeping Camel' => 5,
+'Donnie Darko' => 7
+);
+ // Display the movies in their original order:
+	 echo '<tr><td colspan="2"><b>In their original order:</b></td></tr>';
+foreach ($movies as $title =>$rating) {
+ echo "<tr><td>$rating</td><td>$title</td></tr>\n";
+ }
  
  
         ?>
