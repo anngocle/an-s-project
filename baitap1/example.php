@@ -55,7 +55,7 @@ foreach ($list as $k => $v) {
 	 	 echo '</ul>';
 	
 	 } // End of main FOREACH
- $name = array('an','ban','long');
+ $name = array('an','can','bong');
  sort($name);// săp xep theo thu tư abc
  $dem =count($name);
  echo $dem;
