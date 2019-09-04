@@ -16,6 +16,15 @@ and open the template in the editor.
 $months = array (1 => 'January','February', 'March', 'April', 'May','June', 'July', 'August', 'September','October', 'November', 'December');
 // Make the months pull-down menu:
  echo '<select name="month">';
+ foreach ($months as $key => $value) {
+	 	 echo "<option value=\"$key\">$value</option>\n";
+	 }
+         echo '</select>';
+         echo '<select name ="day">';
+for ($day = 1; $day <= 31; $day++) {
+echo "<option value=\"$day\">$day</option>\n";
+ }
+  
         ?>
     </body>
 </html>
