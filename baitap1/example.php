@@ -55,7 +55,7 @@ foreach ($list as $k => $v) {
 	 	 echo '</ul>';
 	
 	 } // End of main FOREACH
- $name = array('an','can','bong');
+ $name = array('an','can','bong','trang');
  sort($name);// săp xep theo thu tư abc
  $dem =count($name);
  echo $dem;
@@ -72,10 +72,21 @@ foreach ($list as $k => $v) {
 'Donnie Darko' => 7
 );
  // Display the movies in their original order:
-	 echo '<tr><td colspan="2"><b>In their original order:</b></td></tr>';
+ echo '<tr><td colspan="2"><b>In their original order:</b></td></tr>';
 foreach ($movies as $title =>$rating) {
  echo "<tr><td>$rating</td><td>$title</td></tr>\n";
  }
+ ksort($movies);
+ echo "<br>";
+ echo '<tr><td colspan="2"><b>sort by ksoft:</b></td></tr>';
+foreach ($movies as $title =>$rating) {
+ echo "<tr><td>$rating</td><td>$title</td></tr>\n";
+ }
+ arsort($movies);
+ echo '<tr><td colspan="2"><b>Sorted by rating:</b></td></tr>';
+ foreach ($movies as $title =>$rating) {
+echo "<tr><td>$rating</td><td>$title</td></tr>\n";
+}
  
  
         ?>
