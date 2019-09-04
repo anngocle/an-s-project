@@ -62,7 +62,7 @@ foreach ($list as $k => $v) {
  foreach ($name as $value){
      echo "$value <br>";
  }
- echo " wellcome github";
+ echo " wellcome , le ngoc an github";
  
         ?>
     </body>
